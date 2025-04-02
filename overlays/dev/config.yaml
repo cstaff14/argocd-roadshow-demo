@@ -19,14 +19,7 @@ nameReference:
   version: v1
   fieldSpecs:
     - kind: VirtualMachine
-      path: metadata/labels/app
-
-# - kind: VirtualMachine
-#   version: v1
-#   fieldSpecs:
-#     - kind: VirtualMachine
-#       path: spec/template/metadata/labels/env
-  
+      path: metadata/labels/app  
 
 # TODO Challenge: Add namereference definitions for the services and route
 - kind: Service

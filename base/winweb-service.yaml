@@ -1,1 +1,13 @@
-# TODO
+# TODO Challenge
+apiVersion: v1
+kind: Service
+metadata:
+  name: webapp
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    env: webapp
+  type: ClusterIP

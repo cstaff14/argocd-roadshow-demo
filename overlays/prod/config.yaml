@@ -21,4 +21,17 @@ nameReference:
     - kind: VirtualMachine
       path: metadata/labels/app
 
-# TODO Challenge: Add namereference for the services and route
+- kind: VirtualMachine
+  version: v1
+    - kind: VirtualMachine
+      path: spec/template/metadata/labels/env
+
+
+# TODO Challenge: Add namereference definitions for the services and route
+- kind: Service
+  version: v1
+  fieldSpecs:
+    - kind: Service
+      path: spec/selector/kubevirt.io\/domain
+    - kind: Service
+      path: spec/selector/env

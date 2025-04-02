@@ -8,6 +8,6 @@ resources:
 - winweb01-vm.yaml
 - winweb02-disk.yaml
 - winweb02-vm.yaml
-# - winweb-route.yaml
-# - winweb-service.yaml
-# - database-service.yaml
+- winweb-route.yaml
+- winweb-service.yaml
+- database-service.yaml

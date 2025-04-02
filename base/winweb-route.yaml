@@ -1,1 +1,15 @@
-# TODO
+# TODO Challenge
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: webapp-route
+spec:
+  port:
+    targetPort: 80
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: webapp
+  wildcardPolicy: None

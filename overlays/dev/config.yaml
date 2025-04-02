@@ -22,6 +22,7 @@ nameReference:
       path: metadata/labels/app  
 
 # TODO Challenge: Add namereference definitions for the services and route
+# NOTE: If the manifest of a running VM is updated, it will have to be restarted for the change to apply to the pods and VMIs
 - kind: Service
   version: v1
   fieldSpecs:
@@ -31,5 +32,5 @@ nameReference:
       path: spec/selector/env
     - kind: VirtualMachine
       path: spec/template/metadata/labels/env
-
-# TODO: may have to add namereference to vm label
+    - kind: Route
+      path: spec/to/name

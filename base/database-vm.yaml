@@ -40,7 +40,7 @@ spec:
           type: q35
         resources:
           requests:
-            memory: 2Gi
+            memory: 4Gi
       evictionStrategy: LiveMigrate
       networks:
       - name: default

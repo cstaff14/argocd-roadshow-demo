@@ -19,3 +19,5 @@ patches:
       kind: VirtualMachine
       name: database
 
+  # May need a sperate patch for app vm env label if namereference doesn't work
+

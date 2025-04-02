@@ -23,8 +23,9 @@ nameReference:
 
 - kind: VirtualMachine
   version: v1
+  fieldSpecs:
     - kind: VirtualMachine
-      path: template/spec/metadata/labels/env
+      path: spec/template/spec/metadata/labels/env
   
 
 # TODO Challenge: Add namereference definitions for the services and route

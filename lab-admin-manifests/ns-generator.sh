@@ -3,12 +3,12 @@
 # A shell script to generate user namespaces. Must imput the number of users in the lab environment
 
 if [ $# -ne 1 ]; then
-  echo "Error: Please provide exactly one argument."
+  echo "Error: Please provide the number of users."
   exit 1
 fi
 
 if ! [[ "$1" =~ ^-?[0-9]+$ ]]; then
-  echo "Error: Input must be an integer."
+  echo "Error: Number of users must be an integer."
   exit 1
 fi
 

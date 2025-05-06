@@ -13,3 +13,8 @@ patches:
   - path: dev-vm-patch.yaml 
     target:
       kind: VirtualMachine
+
+  - path: dev-db-vm-patch.yaml 
+    target:
+      kind: VirtualMachine
+      name: database
